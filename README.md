@@ -1,41 +1,32 @@
-# Influx Technology AI Brand Guidelines — Claude Skill
+<div align="center">
 
-A [Claude skill](https://support.claude.com/en/articles/12512180-use-skills-in-claude) that enforces Influx Technology's design system across all AI-generated outputs — HTML, documents, presentations, mockups and more.
+```
+██  ██  ██
+██  ██  ██
+██  ██  ██
+```
 
-## What it does
+# Influx Technology — AI Brand Guidelines
 
-When installed, Claude will automatically apply Influx Technology brand standards whenever producing styled output. This includes:
+**A Claude skill that enforces the Influx Technology design system across every AI-generated output.**
 
-- Correct colours, typography (Outfit, Inter, IBM Plex Mono) and spacing on the 8px grid
-- Product colour assignments for REXGEN, K-Series, DIALOG and all other ranges
-- Zero border-radius, brand voice rules and section header stacking
-- **Bundled logo SVGs** — Claude embeds the real logo rather than generating a placeholder
-- **IBM Carbon pictogram guidance** for consistent iconography
+`v0.2` · `Design System v0.2` · `2026-03-20`
 
-## Install
+---
 
-### Individual (Pro / Free plans)
+</div>
 
-1. Download `influx-technology-ai-brand-guidelines.skill` from [Releases](../../releases)
-2. In Claude, go to **Settings → Customize → Skills**
-3. Upload the `.skill` file
-4. The skill activates automatically when producing Influx-branded output
+## What this does
 
-### Organisation (Team / Enterprise plans)
+Upload this skill to Claude and it automatically applies Influx Technology brand standards whenever it produces styled output. No more correcting colours, swapping fonts or fixing spacing after the fact.
 
-1. Download the `.skill` file from [Releases](../../releases)
-2. An **Owner** goes to **Organisation Settings → Skills**
-3. Upload the skill to provision it for all users
-4. Individual users can toggle it on/off in their own **Customize → Skills**
-
-> **Note:** Peer-to-peer sharing between individuals isn't currently supported.
-> Everyone on individual plans needs to upload the skill to their own account.
+Covers **HTML artifacts · Word documents · Presentations · Mockups · Reports · Emails** — anything branded.
 
 ## What's inside
 
 ```
 influx-technology-ai-brand-guidelines/
-├── SKILL.md                              # Core rules and trigger logic
+├── SKILL.md                              # Core brand rules and trigger logic
 ├── references/
 │   └── design-system.md                  # Full token reference
 └── assets/
@@ -47,8 +38,27 @@ influx-technology-ai-brand-guidelines/
     │   ├── logomark.svg                  # 3×3 grid mark (26×26)
     │   └── logomark-sm.svg               # 3×3 grid mark (14×14)
     └── decorative/
-        └── grid-pattern.svg              # Decorative 3×3 grid background element
+        └── grid-pattern.svg              # Decorative 3×3 grid element
 ```
+
+### Design system
+
+Full colour ramps (10 stops per colour), type scale, spacing tokens, responsive breakpoints and grid specifications. Covers Outfit, Inter and IBM Plex Mono with exact weights, sizes and line heights.
+
+### Logo SVGs
+
+Seven variants bundled — dark, light, small, logomark. Claude reads and embeds the real SVG directly rather than generating a placeholder.
+
+### Icon guidance
+
+IBM Carbon pictograms (productive style) for consistent iconography across all outputs.
+
+## Install
+
+1. Download `influx-technology-ai-brand-guidelines.skill` from [Releases](../../releases)
+2. In Claude, go to **Settings → Customize → Skills**
+3. Upload the `.skill` file
+4. Done — the skill activates automatically when producing Influx-branded output
 
 ## Build from source
 
@@ -56,11 +66,6 @@ influx-technology-ai-brand-guidelines/
 cd influx-technology-ai-brand-guidelines
 zip -r ../influx-technology-ai-brand-guidelines.skill SKILL.md references/ assets/
 ```
-
-## Version
-
-- **Skill**: v0.2
-- **Design System**: v0.2 (2026-03-20)
 
 ## Licence
 
