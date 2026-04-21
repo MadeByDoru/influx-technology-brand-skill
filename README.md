@@ -1,10 +1,9 @@
 <div align="center">
 
-```
- ██  ██  ██
- ██  ██  ██     I N F L U X
- ██  ██  ██     T E C H N O L O G Y
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="influx-technology-ai-brand-guidelines/assets/logos/logo-full-light.svg">
+  <img src="influx-technology-ai-brand-guidelines/assets/logos/logo-full-dark.svg" alt="Influx Technology" width="360">
+</picture>
 
 # AI Brand Guidelines
 
